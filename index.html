@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CyberGuard Test Server</title>
+<meta name="description" content="CyberGuard controlled security testing and educational environment.">
+<meta name="theme-color" content="#070b12">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- EDUCATIONAL WARNING -->
+<div class="warning-bar">
+  <div class="warning-track">
+    <span>⚠ CYBERGUARD TEST SERVER</span>
+    <span>FOR TESTING & EDUCATIONAL PURPOSES ONLY</span>
+    <span>DO NOT USE REAL OR SENSITIVE CREDENTIALS</span>
+    <span>CONTROLLED SECURITY ENVIRONMENT</span>
+    <span>SECURITY EVENTS GENERATED HERE ARE FOR DEMONSTRATION</span>
+
+    <span>⚠ CYBERGUARD TEST SERVER</span>
+    <span>FOR TESTING & EDUCATIONAL PURPOSES ONLY</span>
+    <span>DO NOT USE REAL OR SENSITIVE CREDENTIALS</span>
+    <span>CONTROLLED SECURITY ENVIRONMENT</span>
+    <span>SECURITY EVENTS GENERATED HERE ARE FOR DEMONSTRATION</span>
+  </div>
+</div>
+
+<header class="top">
+  <a class="brand" href="index.html">
+    <span class="brand-icon">🛡</span>
+    <span>
+      <strong>CyberGuard</strong>
+      <small>Test Server</small>
+    </span>
+  </a>
+
+  <nav class="nav">
+    <a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link" href="dashboard.html">Dashboard</a>
+    <a class="nav-link" href="about.html">About</a>
+  </nav>
+
+  <div class="nav-auth">
+    <a id="nav-login" class="nav-login" href="#login">Login</a>
+    <a id="nav-dashboard" class="nav-login hidden" href="dashboard.html">
+      Dashboard →
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        CONTROLLED SECURITY ENVIRONMENT
+      </div>
+
+      <h1>
+        Test. Monitor.
+        <span>Learn.</span>
+      </h1>
+
+      <p class="hero-text">
+        CyberGuard Test Server is a controlled web application designed to
+        generate realistic security activity for cybersecurity learning,
+        monitoring and detection demonstrations.
+      </p>
+
+      <div class="hero-actions">
+        <a id="hero-login" class="btn primary" href="#login">
+          🔐 Login to Test Server
+        </a>
+
+        <a id="hero-dashboard" class="btn secondary hidden" href="dashboard.html">
+          Open Test Dashboard →
+        </a>
+
+        <a class="btn secondary" href="about.html">
+          Learn More
+        </a>
+      </div>
+
+      <div id="session-status" class="session-status">
+        <span class="status-dot"></span>
+        Checking authentication status...
+      </div>
+
+    </div>
+
+    <div class="hero-terminal">
+
+      <div class="terminal-top">
+        <div class="terminal-dots">
+          <i></i><i></i><i></i>
+        </div>
+        <span>cyberguard-test-environment</span>
+      </div>
+
+      <div class="terminal-body">
+        <div><span class="terminal-muted">$</span> system.status()</div>
+        <div class="terminal-ok">✓ TEST ENVIRONMENT ONLINE</div>
+
+        <div class="terminal-space"></div>
+
+        <div>
+          <span class="terminal-key">purpose:</span>
+          <span>security education</span>
+        </div>
+
+        <div>
+          <span class="terminal-key">events:</span>
+          <span>authentication + testing</span>
+        </div>
+
+        <div>
+          <span class="terminal-key">monitor:</span>
+          <span>CyberGuard SOC</span>
+        </div>
+
+        <div>
+          <span class="terminal-key">mode:</span>
+          <span class="terminal-warning">NON-PRODUCTION</span>
+        </div>
+
+        <div class="terminal-space"></div>
+
+        <div class="terminal-cursor">
+          <span class="terminal-muted">$</span> _
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- IMPORTANT NOTICE -->
+  <section class="notice-section">
+    <div class="notice-card">
+
+      <div class="notice-icon">⚠</div>
+
+      <div>
+        <div class="section-label">IMPORTANT NOTICE</div>
+
+        <h2>Educational environment only</h2>
+
+        <p>
+          This server exists exclusively for cybersecurity testing,
+          demonstrations and academic learning. It is not a production
+          authentication service. Never use personal, banking, institutional
+          or other sensitive credentials here.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="section">
+
+    <div class="section-heading">
+      <div class="section-label">WHAT THIS ENVIRONMENT DOES</div>
+
+      <h2>Built for security testing</h2>
+
+      <p>
+        The Test Server acts as the application layer while CyberGuard SOC
+        provides the monitoring and investigation layer.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="feature-card">
+        <div class="feature-number">01</div>
+        <div class="feature-icon">🔐</div>
+        <h3>Authentication Testing</h3>
+        <p>
+          Perform controlled login attempts using Supabase authentication
+          and observe the resulting security events.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-number">02</div>
+        <div class="feature-icon">📡</div>
+        <h3>Security Event Logging</h3>
+        <p>
+          Authentication and test activity is recorded as security events
+          that can be investigated from the SOC.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-number">03</div>
+        <div class="feature-icon">🚨</div>
+        <h3>Detection Demonstration</h3>
+        <p>
+          Generate controlled activity and observe how the monitoring system
+          can identify suspicious patterns.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-number">04</div>
+        <div class="feature-icon">🧪</div>
+        <h3>Safe Test Requests</h3>
+        <p>
+          Execute a harmless database round-trip request to verify that the
+          application and backend are communicating correctly.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FLOW -->
+  <section class="section flow-section">
+
+    <div class="section-heading">
+      <div class="section-label">HOW IT CONNECTS</div>
+      <h2>Test Server → SOC</h2>
+    </div>
+
+    <div class="flow">
+
+      <div class="flow-card">
+        <span class="flow-number">01</span>
+        <div class="flow-icon">💻</div>
+        <h3>Test Server</h3>
+        <p>
+          Controlled user activity is generated here.
+        </p>
+      </div>
+
+      <div class="flow-line"></div>
+
+      <div class="flow-card">
+        <span class="flow-number">02</span>
+        <div class="flow-icon">🗄️</div>
+        <h3>Supabase</h3>
+        <p>
+          Authentication and security events are stored securely.
+        </p>
+      </div>
+
+      <div class="flow-line"></div>
+
+      <div class="flow-card">
+        <span class="flow-number">03</span>
+        <div class="flow-icon">🛡️</div>
+        <h3>CyberGuard SOC</h3>
+        <p>
+          Security activity is monitored, detected and investigated.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOGIN -->
+  <section id="login" class="login-section">
+
+    <div class="login-container">
+
+      <div class="login-intro">
+        <div class="section-label">CONTROLLED ACCESS</div>
+
+        <h2>Enter the test environment</h2>
+
+        <p>
+          Use your CyberGuard test account to access the testing dashboard.
+          This account is intended only for this educational environment.
+        </p>
+
+        <div class="login-points">
+          <div>✓ No production credentials</div>
+          <div>✓ Security events are logged</div>
+          <div>✓ Activity can be monitored by the SOC</div>
+        </div>
+      </div>
+
+      <div class="login-card">
+
+        <div class="login-card-header">
+          <div class="login-shield">🛡</div>
+
+          <div>
+            <h3>Test Server Login</h3>
+            <span>Secure test environment</span>
+          </div>
+        </div>
+
+        <div id="continue"
+             class="msg info"
+             style="display:none">
+          <strong>✓ Session already active</strong>
+          <br>
+          You are already authenticated.
+          <a href="dashboard.html">Open your dashboard →</a>
+        </div>
+
+        <form id="login-form" novalidate>
+
+          <label for="email">EMAIL ADDRESS</label>
+
+          <input
+            id="email"
+            type="email"
+            autocomplete="username"
+            placeholder="student@cyberguard.test"
+            required
+          >
+
+          <label for="password">PASSWORD</label>
+
+          <input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter test password"
+            required
+          >
+
+          <button
+            class="btn primary full"
+            id="login-btn"
+            type="submit"
+          >
+            LOGIN TO TEST ENVIRONMENT
+          </button>
+
+        </form>
+
+        <div id="msg" class="msg"></div>
+
+        <div class="demo">
+          <div class="demo-title">DEMO ACCOUNT</div>
+          <div>Email</div>
+          <code>student@cyberguard.test</code>
+          <div class="demo-password">Password</div>
+          <code>CyberGuard123!</code>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="footer-main">
+
+    <div class="brand">
+      <span class="brand-icon">🛡</span>
+      <span>
+        <strong>CyberGuard</strong>
+        <small>Test Server</small>
+      </span>
+    </div>
+
+    <div class="footer-warning">
+      ⚠ TESTING & EDUCATIONAL PURPOSES ONLY
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>Controlled Security Testing Environment</span>
+    <span>CyberGuard Project</span>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/security.js"></script>
+<script src="js/auth.js"></script>
+
+<script>
+/* Main page session-aware UI.
+   Existing authentication logic remains in auth.js. */
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+  if (!sb) return;
+
+  try {
+
+    const { data } = await sb.auth.getSession();
+    const session = data.session;
+
+    const login = document.getElementById("nav-login");
+    const dashboard = document.getElementById("nav-dashboard");
+
+    const heroLogin = document.getElementById("hero-login");
+    const heroDashboard = document.getElementById("hero-dashboard");
+
+    const status = document.getElementById("session-status");
+    const loginSection = document.getElementById("login");
+
+    if (session) {
+
+      /* User is already logged in */
+
+      login?.classList.add("hidden");
+      dashboard?.classList.remove("hidden");
+
+      heroLogin?.classList.add("hidden");
+      heroDashboard?.classList.remove("hidden");
+
+      /* Hide the entire login section */
+      if (loginSection) {
+        loginSection.style.display = "none";
+      }
+
+      if (status) {
+        status.innerHTML =
+          '<span class="status-dot online"></span> ' +
+          'SESSION ACTIVE · ' +
+          (session.user.email || "Authenticated user");
+      }
+
+    } else {
+
+      /* User is not logged in */
+
+      login?.classList.remove("hidden");
+      dashboard?.classList.add("hidden");
+
+      heroLogin?.classList.remove("hidden");
+      heroDashboard?.classList.add("hidden");
+
+      if (status) {
+        status.innerHTML =
+          '<span class="status-dot"></span> TEST ENVIRONMENT READY · LOGIN REQUIRED';
+      }
+
+    }
+
+  } catch (e) {
+
+    console.error("Session check failed:", e);
+
+  }
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test Dashboard | CyberGuard</title>
+<meta name="theme-color" content="#070b12">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="warning-bar">
+  <div class="warning-track">
+    <span>⚠ CYBERGUARD TEST SERVER</span>
+    <span>FOR TESTING & EDUCATIONAL PURPOSES ONLY</span>
+    <span>DO NOT USE REAL OR SENSITIVE CREDENTIALS</span>
+    <span>CONTROLLED SECURITY ENVIRONMENT</span>
+
+    <span>⚠ CYBERGUARD TEST SERVER</span>
+    <span>FOR TESTING & EDUCATIONAL PURPOSES ONLY</span>
+    <span>DO NOT USE REAL OR SENSITIVE CREDENTIALS</span>
+    <span>CONTROLLED SECURITY ENVIRONMENT</span>
+  </div>
+</div>
+
+<header class="top">
+
+  <a class="brand" href="index.html">
+    <span class="brand-icon">🛡</span>
+
+    <span>
+      <strong>CyberGuard</strong>
+      <small>Test Server</small>
+    </span>
+  </a>
+
+  <nav class="nav">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link active" href="dashboard.html">Dashboard</a>
+    <a class="nav-link" href="about.html">About</a>
+  </nav>
+
+  <button class="logout-top" id="logout-btn">
+    Logout
+  </button>
+
+</header>
+
+
+<main class="dashboard-page" id="page" style="display:none">
+
+  <!-- HEADER -->
+
+  <section class="dashboard-header">
+
+    <div>
+
+      <div class="eyebrow">
+        <span class="status-dot online"></span>
+        TEST ENVIRONMENT · AUTHENTICATED
+      </div>
+
+      <h1 id="welcome">Welcome</h1>
+
+      <p>
+        Controlled security testing dashboard
+      </p>
+
+    </div>
+
+    <div class="environment-badge">
+      🧪 NON-PRODUCTION
+    </div>
+
+  </section>
+
+
+  <!-- ACCOUNT STATS -->
+
+  <section class="stats-grid">
+
+    <div class="stat-card">
+      <div class="stat-icon green">✓</div>
+      <div class="stat-label">ACCOUNT STATUS</div>
+      <div class="stat-value">Active</div>
+      <div class="stat-description">
+        Test account authenticated
+      </div>
+    </div>
+
+    <div class="stat-card">
+
+      <div class="stat-icon blue">👤</div>
+
+      <div class="stat-label">DISPLAY NAME</div>
+
+      <div
+        class="stat-value small-value"
+        id="name"
+      >
+        —
+      </div>
+
+      <div class="stat-description">
+        Current test profile
+      </div>
+
+    </div>
+
+    <div class="stat-card">
+
+      <div class="stat-icon purple">◷</div>
+
+      <div class="stat-label">LAST LOGIN</div>
+
+      <div
+        class="stat-value small-value"
+        id="last-login"
+      >
+        —
+      </div>
+
+      <div class="stat-description">
+        Latest authenticated session
+      </div>
+
+    </div>
+
+    <div class="stat-card">
+
+      <div class="stat-icon orange">◉</div>
+
+      <div class="stat-label">SECURITY EVENTS</div>
+
+      <div
+        class="stat-value"
+        id="count"
+      >
+        0
+      </div>
+
+      <div class="stat-description">
+        Events recorded for this account
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TEST AREA -->
+
+  <section class="test-area">
+
+    <div class="section-heading compact">
+
+      <div class="section-label">SECURITY TESTING</div>
+
+      <h2>Run a controlled test</h2>
+
+      <p>
+        The test below performs a harmless database round-trip and records
+        the result as a security event.
+      </p>
+
+    </div>
+
+    <div class="test-card">
+
+      <div class="test-card-icon">
+        🧪
+      </div>
+
+      <div class="test-card-content">
+
+        <div class="test-card-title">
+          Test Activity Request
+        </div>
+
+        <p>
+          Verify that the Test Server can communicate with Supabase and
+          successfully record a security event.
+        </p>
+
+        <div class="test-meta">
+          <span>TYPE: TEST_REQUEST</span>
+          <span>SEVERITY: LOW</span>
+          <span>SAFE OPERATION</span>
+        </div>
+
+      </div>
+
+      <button
+        class="btn primary test-button"
+        id="test-btn"
+      >
+        RUN TEST
+      </button>
+
+    </div>
+
+    <div id="msg" class="msg"></div>
+
+  </section>
+
+
+  <!-- ACTIVITY -->
+
+  <section class="activity-section">
+
+    <div class="section-heading compact">
+
+      <div class="section-label">EVENT MONITOR</div>
+
+      <div class="activity-heading-row">
+
+        <div>
+          <h2>Recent Security Activity</h2>
+
+          <p>
+            Latest security events associated with this account.
+          </p>
+        </div>
+
+        <div class="live-badge">
+          <span class="status-dot online"></span>
+          LIVE DATA
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="activity-card">
+
+      <div class="table-header">
+        <span>Event Stream</span>
+        <span>Source: Test Server</span>
+      </div>
+
+      <div class="tw">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Event</th>
+              <th>Severity</th>
+              <th>Target</th>
+              <th>Time</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="events">
+
+            <tr>
+              <td colspan="4" class="empty">
+                Loading security activity...
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECURITY INFO -->
+
+  <section class="dashboard-info">
+
+    <div class="info-panel">
+
+      <div class="section-label">TEST ENVIRONMENT</div>
+
+      <h3>What happens here?</h3>
+
+      <p>
+        Activity generated by this application is recorded in the shared
+        CyberGuard security event system. The separate CyberGuard SOC can
+        consume these events for monitoring, detection and investigation.
+      </p>
+
+    </div>
+
+    <div class="info-panel warning-panel">
+
+      <div class="section-label">REMINDER</div>
+
+      <h3>Use test credentials only</h3>
+
+      <p>
+        Never enter passwords or information belonging to real users,
+        banking accounts, college systems or other sensitive services.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="footer-main">
+
+    <div class="brand">
+      <span class="brand-icon">🛡</span>
+
+      <span>
+        <strong>CyberGuard</strong>
+        <small>Test Server</small>
+      </span>
+    </div>
+
+    <div class="footer-warning">
+      ⚠ TESTING & EDUCATIONAL PURPOSES ONLY
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>Controlled Security Testing Environment</span>
+    <span>CyberGuard Project</span>
+  </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/security.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
